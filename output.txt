@@ -1,0 +1,6 @@
+{
+  "explanation": "Here's the R code to perform statistical analysis on the mtcars dataset. It includes descriptive statistics, correlation analysis, and a visualization.",
+  "code": "options(repos = c(CRAN = 'https://cloud.r-project.org'))\n\nif(!require(ggplot2)){install.packages('ggplot2'); library(ggplot2)}\n\n# Load the mtcars dataset\n data(mtcars)\n\n# Summary statistics\n summary(mtcars)\n\n# Correlation matrix\ncor(mtcars)\n\n# Scatter plot of mpg vs. hp\nggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()\n",
+  "points": ["The code starts by loading the built-in `mtcars` dataset.", "It calculates and prints summary statistics for each variable using `summary(mtcars)`. ", "The `cor(mtcars)` function computes the correlation matrix, showing the relationships between variables.", "Finally, a scatter plot visualizing the relationship between horsepower (hp) and miles per gallon (mpg) is created using `ggplot2`."],
+  "instructions": ["Make sure you have `ggplot2` installed. If not, run `install.packages('ggplot2')` first.", "Then load the `ggplot2` package using `library(ggplot2)`."]
+} 
