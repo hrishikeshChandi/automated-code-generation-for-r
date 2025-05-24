@@ -76,14 +76,14 @@ if (length(warnings_list) > 0) {
 
 append_output("\n5. Summary:\n")
 if (length(lint_results) == 0) {
-  append_output("- ✅ Code style is clean.\n")
+  append_output("- Code style is clean.\n")
 } else {
-  append_output("- ⚠️ Linting issues found. Please review.\n")
+  append_output("- Linting issues found. Please review.\n")
 }
 if (success) {
-  append_output("- ✅ Code executed successfully.\n")
+  append_output("- Code executed successfully.\n")
 } else {
-  append_output("- ❌ Code execution failed.\n")
+  append_output("- Code execution failed.\n")
 }
 
 writeLines(analysis_output, con = report_file)
