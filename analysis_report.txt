@@ -113,7 +113,7 @@ Memory used: 10.11 MB
 
 5. Summary:
 
-- ⚠️ Linting issues found. Please review.
+- Linting issues found. Please review.
 
-- ✅ Code executed successfully.
+- Code executed successfully.
 
