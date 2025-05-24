@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an intelligent assistant that helps you generate R code for tasks like data analysis, visualization, and more. Powered by **Gemma 2** model, it ensures that all solutions are delivered in R, and provides friendly, clear explanations and step-by-step instructions. With built-in code analysis and performance feedback, you can be sure the R code you receive is clean, efficient, and ready to use.
+This project is an intelligent assistant that helps you generate R code for tasks like data analysis, visualization, and more. Powered by **Llama-3.3-70b** model through **Groq API**, it ensures that all solutions are delivered in R, and provides friendly, clear explanations and step-by-step instructions. With built-in code analysis and performance feedback, you can be sure the R code you receive is clean, efficient, and ready to use.
 
 ## Features
 
@@ -16,7 +16,7 @@ This project is an intelligent assistant that helps you generate R code for task
 ## How It Works
 
 1. **Describe Your Task:** Type what you want to do in R.
-2. **AI Generates R Code:** The assistant (powered by Gemma 2 via Groq API) interprets your request and creates an R script, following best practices and strict R-only rules.
+2. **AI Generates R Code:** The assistant (powered by Llama-3.3-70b via Groq API) interprets your request and creates an R script, following best practices and strict R-only rules.
 3. **Review and Understand:** You receive the code, a friendly explanation, key points about what it does, and easy-to-follow setup instructions.
 4. **Automatic Analysis:** The code is checked for common issues, executed in a safe environment, and the results (success, warnings, performance) are summarized.
 5. **Download and Use:** Download a handy analysis report.
@@ -69,12 +69,12 @@ This project is an intelligent assistant that helps you generate R code for task
 
 ```
 .
-├── main.py         # The main app (Streamlit, Python)
-├── wrapper.r       # R script for code linting and analysis
-├── requirements.txt# Python dependencies
-├── .env            # Your API keys (not tracked in git)
-├── trial.r         # Generated R code (temporary, during use)
-├── output.txt      # AI model’s raw output (temporary)
+├── main.py             # The main app (Streamlit, Python)
+├── wrapper.r           # R script for code linting and analysis
+├── requirements.txt    # Python dependencies
+├── .env                # Your API keys (not tracked in git)
+├── trial.r             # Generated R code (temporary, during use)
+├── output.txt          # AI model’s raw output (temporary)
 ├── analysis_report.txt # Detailed analysis of your R code
 ```
 
