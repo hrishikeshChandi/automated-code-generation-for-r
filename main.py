@@ -11,7 +11,7 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
-load_dotenv()
+load_dotenv(dotenv_path="./.env")
 
 st.set_page_config(layout="wide")
 
